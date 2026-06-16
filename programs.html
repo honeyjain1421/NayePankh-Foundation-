@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Programs - NayePankh Foundation</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { light: '#f97316', DEFAULT: '#ea580c', dark: '#c2410c' },
+            accent: { light: '#38bdf8', DEFAULT: '#0284c7', dark: '#0369a1' }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="bg-gradient-to-tr from-brand to-amber-500 p-2.5 rounded-xl shadow-md">
+            <i class="fa-solid fa-dove text-white text-xl"></i>
+          </div>
+          <div>
+            <span class="text-xl font-extrabold text-slate-900 dark:text-white block leading-none">NayePankh</span>
+            <span class="text-[10px] font-bold tracking-widest text-brand uppercase block mt-1">FOUNDATION</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex space-x-1 items-center">
+          <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:text-brand">Home</a>
+          <a href="about.html" class="nav-link-item px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:text-brand">About Us</a>
+          <a href="programs.html" class="nav-link-item active px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:text-brand">Our Programs</a>
+          <a href="volunteer.html" class="nav-link-item px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:text-brand">Volunteer</a>
+          <a href="contact.html" class="nav-link-item px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:text-brand">Contact Us</a>
+        </nav>
+        <div class="hidden md:flex items-center space-x-4">
+          <button id="theme-toggle" class="p-2.5 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+            <i class="fa-solid fa-moon dark:hidden text-lg"></i>
+            <i class="fa-solid fa-sun hidden dark:block text-lg text-amber-400"></i>
+          </button>
+          <a href="volunteer.html" class="bg-brand text-white px-5 py-2.5 rounded-xl font-semibold text-sm">Join Mission</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">Our Strategic Programs</h1>
+        <div class="w-16 h-1.5 bg-brand mx-auto mt-4 rounded-full"></div>
+        <p class="mt-4 text-slate-600 dark:text-slate-400">We drive systematic impact under five specialized operational pillars.</p>
+      </div>
+
+      <!-- Program Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Education Support -->
+        <div class="program-card bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-brand mb-6">
+              <i class="fa-solid fa-graduation-cap text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Education Support</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+              Empowering underprivileged children through primary tuition hubs, distributed stationery, smart tablet models, and professional mentorship networks.
+            </p>
+          </div>
+          <a href="volunteer.html" class="text-brand font-bold text-xs inline-flex items-center hover:underline">Apply as Volunteer <i class="fa-solid fa-angle-right ml-1"></i></a>
+        </div>
+
+        <!-- Women Empowerment -->
+        <div class="program-card bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-500 mb-6">
+              <i class="fa-solid fa-venus-mars text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Women Empowerment</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+              Providing digital literacy, craft training modules, and self-employment funding connections to scale up female representation in community enterprises.
+            </p>
+          </div>
+          <a href="volunteer.html" class="text-indigo-500 font-bold text-xs inline-flex items-center hover:underline">Apply as Volunteer <i class="fa-solid fa-angle-right ml-1"></i></a>
+        </div>
+
+        <!-- Skill Development -->
+        <div class="program-card bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-500 mb-6">
+              <i class="fa-solid fa-laptop-code text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Skill Development</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+              Introducing fundamental programming classes, creative design resources, soft skills workshops, and job interview placement guidelines.
+            </p>
+          </div>
+          <a href="volunteer.html" class="text-emerald-500 font-bold text-xs inline-flex items-center hover:underline">Apply as Volunteer <i class="fa-solid fa-angle-right ml-1"></i></a>
+        </div>
+
+        <!-- Community Welfare -->
+        <div class="program-card bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-sky-500/10 flex items-center justify-center text-sky-500 mb-6">
+              <i class="fa-solid fa-handshake-angle text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Community Welfare</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+              Executing basic diagnostic check-up camps, fresh nutrition security drives, winter blanket sharing, and legal awareness advice booths.
+            </p>
+          </div>
+          <a href="volunteer.html" class="text-sky-500 font-bold text-xs inline-flex items-center hover:underline">Apply as Volunteer <i class="fa-solid fa-angle-right ml-1"></i></a>
+        </div>
+
+        <!-- Environmental Initiatives -->
+        <div class="program-card bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-teal-500/10 flex items-center justify-center text-teal-600 mb-6">
+              <i class="fa-solid fa-leaf text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Environmental Initiatives</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+              Nurturing community waste categorization, urban tree-plantation drives, solar integration guidelines, and local cleanliness initiatives.
+            </p>
+          </div>
+          <a href="volunteer.html" class="text-teal-600 font-bold text-xs inline-flex items-center hover:underline">Apply as Volunteer <i class="fa-solid fa-angle-right ml-1"></i></a>
+        </div>
+
+        <!-- Custom Callout Card -->
+        <div class="bg-gradient-to-br from-brand to-amber-500 p-8 rounded-3xl text-white flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-extrabold mb-3">Help Us Do More!</h3>
+            <p class="text-xs text-orange-50 leading-relaxed">We require dedicated group members to assist program expansion to multiple districts. No professional prerequisites are needed.</p>
+          </div>
+          <a href="volunteer.html" class="bg-white text-brand text-center font-bold px-6 py-3.5 rounded-xl text-xs mt-6 transition-all hover:bg-orange-50">Volunteer Now <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs">
+      <p>&copy; 2026 NayePankh Foundation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
