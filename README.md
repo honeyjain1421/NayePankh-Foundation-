@@ -1,4 +1,4 @@
-# NayePankh-Foundation-
+# NayePankh-Foundation
 AI Web Development Internship Task for NayePankh Foundation 
 
 NayePankh Foundation - Premium NGO Platform (AI Web Dev Portfolio Showcase)
@@ -43,11 +43,13 @@ A11y & Performance Guard: Resolves the "blank white layout screen" vulnerability
 5. Client-Side Input Schemas & Custom Validation UI
 Accessibility Compliant Forms: Utilizes semantic validation states across input types (tel, email) coupled with custom-built, alert-free modal notifications (#custom-modal) to manage error and success feedback patterns elegantly.
 
+
 🛠️ Tooling & Stack Rationale
 HTML5: Strict semantic markup layout structure to achieve optimal SEO ranking and high accessibility (WCAG compliance) scores.
 Tailwind CSS (CDN): Chosen for rapid responsive breakouts, complex CSS variable grids, hover interactions, transition animations, and dark mode classes without bloating static bundle sizes.
 Bootstrap 5 (Grid & Core CSS): Utilized selectively for robust structural column grids, responsive navbar elements, and accordion components.
 Vanilla JS (ES6+): Employs pure, lightweight DOM selectors, array mappings, strict scopes, and state variables over heavy frameworks.
+
 
 🚀 How to Run and Deploy the Project
 Local Development:
@@ -55,19 +57,23 @@ Clone or download this project folder onto your local environment.
 Ensure the files match the structured paths shown in the directory structure above (e.g., style.css must sit inside /css).
 Simply launch index.html via a modern browser or serve it dynamically using the VS Code "Live Server" extension to inspect asset rendering.
 
+
 Production Deployment (e.g., GitHub Pages):
 Initialize a Git repository inside /project and push to a remote GitHub repository.
 Navigate to Settings -> Pages in your repository.
 Select your deployment branch (usually main or master) and folder path /root then save.
 Your clean portfolio piece will be live on GitHub Pages instantly.
 
+
 💡 Architectural Decisions (For Interview Reference)
 During technical discussions, you can reference these architectural strategies to showcase your front-end capability:
 Responsive Multi-Page Design vs. Heavy SPA Frameworks:
 "By choosing a multi-page setup powered by lightweight utility libraries, we achieve exceptional First Contentful Paint (FCP) and Time to Interactive (TTI) scores. This is highly beneficial for non-profit sites, where users may access platforms on low-bandwidth mobile networks without needing heavy React/Vue runtime hydration."
 
+
 State Management & Theme Control:
 "Instead of relying on heavy CSS media queries or reactive states, we manipulated the DOM at the document-level root. Coupled with localStorage, we ensure that state persists natively, avoiding style flickers and layout shifts (CLS) on reload."
+
 
 Client-Side AI Integration Strategy:
 "The AI simulation widget shows an asynchronous workflow UI. It demonstrates how to handle asynchronous layout states, loading skeletons, and intent routing cleanly, ready to be hot-swapped with a live REST API endpoint (like OpenAI or Gemini API) without rewriting the structural front-end templates."
