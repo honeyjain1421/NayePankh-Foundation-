@@ -1,5 +1,6 @@
 # NayePankh-Foundation-
 AI Web Development Internship Task for NayePankh Foundation 
+
 NayePankh Foundation - Premium NGO Platform (AI Web Dev Portfolio Showcase)
 
 A production-ready, fully responsive, and performance-optimized multi-page platform built for NayePankh Foundation. This codebase demonstrates clean semantic HTML5, modern layout architectures (Tailwind CSS utility variables integrated with Bootstrap 5 structural grids), responsive design patterns, and interactive Vanilla JS modules.
@@ -9,14 +10,21 @@ The highlight of this platform is a client-side AI Copilot & Assist Simulation W
 
 📂 Architecture & Directory Structure
 This project follows a modular, industry-standard directory layout that prioritizes clean division of concerns, maintainability, and search engine optimization (SEO):
+
 /project
 │── index.html          # Home Page (Hero Layout, Responsive AI Integration Panel, Live Copilot)
+
 │── about.html          # About Page (Vision, Mission, Interactive Timeline, Core Values)
+
 │── programs.html       # Programs Page (Tailwind Transition Cards for local campaigns)
+
 │── volunteer.html      # Volunteer Registration (Strict client-side validation schema)
+
 │── contact.html        # Contact Page (Dynamic Google Maps simulation, structured ticket form)
+
 │── css/
 │   └── style.css       # Global design system variables & premium transition overrides
+
 └── js/
     └── script.js       # Core Controller (Theme state, dynamic counters, validation engines, NLP chatbot)
 
